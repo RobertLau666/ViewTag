@@ -1,0 +1,5 @@
+/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_0.png
+/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_2.png
+/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_3.png
+/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/1/10439_1_1.png
+/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/1/10439_1_2.png

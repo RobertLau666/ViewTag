@@ -1,0 +1,301 @@
+{
+    "NPC_id": 0,
+    "image_name": "10002",
+    "image_path": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+    "output_image_list": {
+        "0": {
+            "num_id": 0,
+            "final_paths": [
+                "output_images/ugc_NPC_images/10002/0/10002_0_0.png",
+                "output_images/ugc_NPC_images/10002/0/10002_0_1.png",
+                "output_images/ugc_NPC_images/10002/0/10002_0_2.png",
+                "output_images/ugc_NPC_images/10002/0/10002_0_3.png"
+            ],
+            "json_data": {
+                "style_names": [
+                    "美漫",
+                    "美漫",
+                    "美漫",
+                    "美漫"
+                ],
+                "img_url": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+                "img_id": "99",
+                "prompts": "",
+                "prompts_simple": "",
+                "trace_id": "10002",
+                "user_id": "4503599627561295",
+                "gender": 0,
+                "is_test": false,
+                "face_pos": "",
+                "env": "test",
+                "card_type": "1",
+                "kind": "retry"
+            },
+            "prompts": [
+                "<lora:acg_lol-000002:0.7>,medium shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bun, platinum blonde hair, tailbone length hair, Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,medium shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bun, platinum blonde hair, tailbone length hair, Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bun, platinum blonde hair, tailbone length hair, Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,medium shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bun, platinum blonde hair, tailbone length hair, Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer"
+            ],
+            "prompts_simple": [
+                " Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden",
+                " Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden",
+                " Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden",
+                " Arms behind back, crimson cotton white lace dress with a scalloped hem,  fedora, garden"
+            ],
+            "neg_prompts": [
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))"
+            ],
+            "cost_time": 65.68090081214905,
+            "generate_time": "2024-01-30 11:42:13"
+        },
+        "1": {
+            "num_id": 1,
+            "final_paths": [
+                "output_images/ugc_NPC_images/10002/1/10002_1_0.png",
+                "output_images/ugc_NPC_images/10002/1/10002_1_1.png",
+                "output_images/ugc_NPC_images/10002/1/10002_1_2.png",
+                "output_images/ugc_NPC_images/10002/1/10002_1_3.png"
+            ],
+            "json_data": {
+                "style_names": [
+                    "美漫",
+                    "美漫",
+                    "美漫",
+                    "美漫"
+                ],
+                "img_url": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+                "img_id": "99",
+                "prompts": "",
+                "prompts_simple": "",
+                "trace_id": "10002",
+                "user_id": "4503599627561295",
+                "gender": 0,
+                "is_test": false,
+                "face_pos": "",
+                "env": "test",
+                "card_type": "1",
+                "kind": "retry"
+            },
+            "prompts": [
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bow, gradient hair, thigh length hair, Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bow, gradient hair, thigh length hair, Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,halfbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bow, gradient hair, thigh length hair, Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,halfbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,hair bow, gradient hair, thigh length hair, Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer"
+            ],
+            "prompts_simple": [
+                " Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway",
+                " Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway",
+                " Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway",
+                " Salute, charcoal chiffon palazzo pants, lavender messenger bag, subway"
+            ],
+            "neg_prompts": [
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))"
+            ],
+            "cost_time": 53.45581769943237,
+            "generate_time": "2024-01-30 11:43:07"
+        },
+        "2": {
+            "num_id": 2,
+            "final_paths": [
+                "output_images/ugc_NPC_images/10002/2/10002_2_0.png",
+                "output_images/ugc_NPC_images/10002/2/10002_2_1.png",
+                "output_images/ugc_NPC_images/10002/2/10002_2_2.png",
+                "output_images/ugc_NPC_images/10002/2/10002_2_3.png"
+            ],
+            "json_data": {
+                "style_names": [
+                    "美漫",
+                    "美漫",
+                    "美漫",
+                    "美漫"
+                ],
+                "img_url": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+                "img_id": "99",
+                "prompts": "",
+                "prompts_simple": "",
+                "trace_id": "10002",
+                "user_id": "4503599627561295",
+                "gender": 0,
+                "is_test": false,
+                "face_pos": "",
+                "env": "test",
+                "card_type": "1",
+                "kind": "retry"
+            },
+            "prompts": [
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,lolita hairband, auburn hair, ear length hair, Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,lolita hairband, auburn hair, ear length hair, Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,lolita hairband, auburn hair, ear length hair, Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,lolita hairband, auburn hair, ear length hair, Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer"
+            ],
+            "prompts_simple": [
+                " Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital",
+                " Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital",
+                " Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital",
+                " Against wall, sangria gabardine Vintage 1920s flapper dress with fringe and beaded embellishments, periwinkle watch, hospital"
+            ],
+            "neg_prompts": [
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))"
+            ],
+            "cost_time": 51.394906759262085,
+            "generate_time": "2024-01-30 11:43:58"
+        },
+        "3": {
+            "num_id": 3,
+            "final_paths": [
+                "output_images/ugc_NPC_images/10002/3/10002_3_0.png",
+                "output_images/ugc_NPC_images/10002/3/10002_3_1.png",
+                "output_images/ugc_NPC_images/10002/3/10002_3_2.png",
+                "output_images/ugc_NPC_images/10002/3/10002_3_3.png"
+            ],
+            "json_data": {
+                "style_names": [
+                    "美漫",
+                    "美漫",
+                    "美漫",
+                    "美漫"
+                ],
+                "img_url": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+                "img_id": "99",
+                "prompts": "",
+                "prompts_simple": "",
+                "trace_id": "10002",
+                "user_id": "4503599627561295",
+                "gender": 0,
+                "is_test": false,
+                "face_pos": "",
+                "env": "test",
+                "card_type": "1",
+                "kind": "retry"
+            },
+            "prompts": [
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,curly hair, streaked hair, calf length hair, Shushing, magenta suede sweater, orange , roller coaster,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,curly hair, streaked hair, calf length hair, Shushing, magenta suede sweater, orange , roller coaster,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,curly hair, streaked hair, calf length hair, Shushing, magenta suede sweater, orange , roller coaster,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,curly hair, streaked hair, calf length hair, Shushing, magenta suede sweater, orange , roller coaster,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer"
+            ],
+            "prompts_simple": [
+                " Shushing, magenta suede sweater, orange , roller coaster",
+                " Shushing, magenta suede sweater, orange , roller coaster",
+                " Shushing, magenta suede sweater, orange , roller coaster",
+                " Shushing, magenta suede sweater, orange , roller coaster"
+            ],
+            "neg_prompts": [
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))"
+            ],
+            "cost_time": 56.66333222389221,
+            "generate_time": "2024-01-30 11:44:55"
+        },
+        "4": {
+            "num_id": 4,
+            "final_paths": [
+                "output_images/ugc_NPC_images/10002/4/10002_4_0.png",
+                "output_images/ugc_NPC_images/10002/4/10002_4_1.png",
+                "output_images/ugc_NPC_images/10002/4/10002_4_2.png",
+                "output_images/ugc_NPC_images/10002/4/10002_4_3.png"
+            ],
+            "json_data": {
+                "style_names": [
+                    "美漫",
+                    "美漫",
+                    "美漫",
+                    "美漫"
+                ],
+                "img_url": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+                "img_id": "99",
+                "prompts": "",
+                "prompts_simple": "",
+                "trace_id": "10002",
+                "user_id": "4503599627561295",
+                "gender": 0,
+                "is_test": false,
+                "face_pos": "",
+                "env": "test",
+                "card_type": "1",
+                "kind": "retry"
+            },
+            "prompts": [
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,cat hair ornament, copper hair, knee length hair, Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,halfbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,cat hair ornament, copper hair, knee length hair, Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,cat hair ornament, copper hair, knee length hair, Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,cat hair ornament, copper hair, knee length hair, Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer"
+            ],
+            "prompts_simple": [
+                " Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium",
+                " Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium",
+                " Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium",
+                " Sitting, magenta poplin Vintage 1920s flapper dress with fringe and beaded embellishments, purple trilby, aquarium"
+            ],
+            "neg_prompts": [
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))"
+            ],
+            "cost_time": 80.2122437953949,
+            "generate_time": "2024-01-30 11:46:16"
+        },
+        "5": {
+            "num_id": 5,
+            "final_paths": [
+                "output_images/ugc_NPC_images/10002/5/10002_5_0.png",
+                "output_images/ugc_NPC_images/10002/5/10002_5_1.png",
+                "output_images/ugc_NPC_images/10002/5/10002_5_2.png",
+                "output_images/ugc_NPC_images/10002/5/10002_5_3.png"
+            ],
+            "json_data": {
+                "style_names": [
+                    "美漫",
+                    "美漫",
+                    "美漫",
+                    "美漫"
+                ],
+                "img_url": "/dfs/comicai/chenyu.liu/ugc_generate_sample/input_images/ugc_NPC_images/10002.png",
+                "img_id": "99",
+                "prompts": "",
+                "prompts_simple": "",
+                "trace_id": "10002",
+                "user_id": "4503599627561295",
+                "gender": 0,
+                "is_test": false,
+                "face_pos": "",
+                "env": "test",
+                "card_type": "1",
+                "kind": "retry"
+            },
+            "prompts": [
+                "<lora:acg_lol-000002:0.7>,halfbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,twintails, brown hair, jaw length hair, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,upperbody,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,twintails, brown hair, jaw length hair, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,twintails, brown hair, jaw length hair, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer",
+                "<lora:acg_lol-000002:0.7>,cowboy shot,(masterpiece, highest quality:1.1),extreme quality,(hires:1.2),detailed face+eyes+clothes,HDR,8K resolution,solo,1face,1head,((1girl:2),female,,twintails, brown hair, jaw length hair, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach,blush, smile, bangs, brown_eyes),cg, focus on face, looking at viewer"
+            ],
+            "prompts_simple": [
+                "twintails, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach",
+                "twintails, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach",
+                "twintails, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach",
+                "twintails, Looking back, mocha polyester off-the-shoulder top, sangria cufflinks, beach"
+            ],
+            "neg_prompts": [
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))",
+                "(1man:1.5),male,(nsfw,NSFW:2), ((monochrome)),(watermark:2), (monochrome),(extra fingers:2), (extra hands:2), (extra legs:2), (extra limbs:2), fat, fused fingers, glans, glitch, gross proportions, incoherent, logo, 2heads, long fingers, long neck, low quality, low quality, lowres, low-res, (malformed limbs:2), missing arms, missing fingers, missing legs, missing_arms, morbid, more than two hands, more than two legs, multiple bodies, mutated, mutated fingers, mutated hands, mutation,BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,(nsfw,NSFW:2),(nudity:2),(nude:2),BadDream,easynegative,FastNegativeV2,negative_hand-neg,ng_deepnegative_v1_75t,lowres,blur,((watermark:2))"
+            ],
+            "cost_time": 60.07159972190857,
+            "generate_time": "2024-01-30 11:47:16"
+        }
+    }
+}
