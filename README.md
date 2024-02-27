@@ -23,7 +23,7 @@ Modify parameters in configs/config.py
 ```
 python show_url_imgs_app.py
 ```
-Then you can open link in local: http://0.0.0.0:[port], for example: [http://0.0.0.0:12400](http://0.0.0.0:12400); Or open it in the following way: [HostName]:[port], for example: [192.168.190.60:12400](192.168.190.60:12400)
+Then you can open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; Or open it in the following way: [HostName]:[port], for example: 192.168.190.60:12400
 
 Tagging rules:
 - The checkbox "bad" under each group of images is selected to represent the whole group of bad images
