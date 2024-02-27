@@ -1,16 +1,19 @@
 # show_tag_imgs
-This is an image display and marking gradio implementation project, for a specific directory structure of the image folder, the images folder struction is similar to the following:
+This is an showing and tagging image gradio implementation project, for a specific directory structure of the image folder, the images folder struction is similar to the following:
 ```
 | test_show_images/
 |---- 10002/
 |-------- 0/
 |------------ 10002_0_0.png
 |------------ 10002_0_1.png
-|------------ 10002_0_2.png
-|------------ 10002_0_3.png
-...
+|------------ ...
+|-------- 1/
+|------------ 10002_1_0.png
+|------------ 10002_1_1.png
+|------------ ...
+|-------- ...
 |-------- 10002.json
-...
+|---- ...
 
 ```
 ## Usage
@@ -18,6 +21,7 @@ Modify parameters in configs/config.py
 ```
 python show_url_imgs_app.py
 ```
+Then you can open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; Or open it in the following way:[HostName]:[port], for example: 192.168.190.60:12400
 
 Tagging rules:
 - The "bad" under each group of images is selected to represent the whole group of bad images
