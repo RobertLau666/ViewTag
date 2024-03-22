@@ -194,20 +194,21 @@ def create_item(folder_NPC, folder_num, card_name, prompts):
                     # pil_image = Image.open(image_bytesio)
                     # image_ = gr.Image(pil_image, label=f"{image}", type="pil", interactive=False, show_label=False)
                     # 3. load and show img by .webp format
+                    img = None
                     try:
                         img = Image.open(image_path)
                     except UnidentifiedImageError as e:
                         print(f"Error opening image {image_path}: {e}")
-                    webp_image_bytesio = BytesIO()
-                    img.save(webp_image_bytesio, "WEBP")
-                    image_ = gr.Image(Image.open(webp_image_bytesio), label=f"{image}", type="pil", interactive=False, show_label=False, show_download_button=False)
-                    image_save_value = False
-                    if folder_NPC in tag_json and folder_num_path in tag_json[folder_NPC] and image_path in tag_json[folder_NPC][folder_num_path]["tags_"]:
-                        image_save_value = True if tag_json[folder_NPC][folder_num_path]["tags_"][image_path] == 1 else False
-                    image_tag_ = gr.Checkbox(value=image_save_value, label="bad", interactive=True, visible=config.tag_mode)
-                    
-                    image_path_s.append(image_path_)
-                    image_tag_s.append(image_tag_)
+                    if img is not None:
+                        webp_image_bytesio = BytesIO()
+                        img.save(webp_image_bytesio, "WEBP")
+                        image_ = gr.Image(Image.open(webp_image_bytesio), label=f"{image}", type="pil", interactive=False, show_label=False, show_download_button=False)
+                        image_save_value = False
+                        if folder_NPC in tag_json and folder_num_path in tag_json[folder_NPC] and image_path in tag_json[folder_NPC][folder_num_path]["tags_"]:
+                            image_save_value = True if tag_json[folder_NPC][folder_num_path]["tags_"][image_path] == 1 else False
+                        image_tag_ = gr.Checkbox(value=image_save_value, label="bad", interactive=True, visible=config.tag_mode)
+                        image_path_s.append(image_path_)
+                        image_tag_s.append(image_tag_)
 
             save_value = False
             note_value = ""
