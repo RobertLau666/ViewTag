@@ -21,7 +21,7 @@ The images folder struction is similar to the following:
 ## Usage
 Modify parameters in configs/config.py
 ```
-python show_url_imgs_app.py
+python show_tag_imgs_app.py
 ```
 Then you can open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; Or open it in the following way: [HostName]:[port], for example: 192.168.190.60:12400
 
