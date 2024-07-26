@@ -35,7 +35,7 @@ def save_tag_txt():
     return good_images_num, all_images_num
 
 def save_tag_json(*args):
-    # folder_num_path_list+tag_list+note_list+image_path_list+image_tag_list+image_num_list,
+    # img_name_path_list+tag_list+note_list+image_path_list+image_tag_list+image_num_list,
     tag_json = load_tag_json()
 
     args = list(args)
@@ -56,9 +56,9 @@ def save_tag_json(*args):
     print("args_front: ", len(args_front), args_front)
     print("args_behind: ", len(args_behind), args_behind)
 
-    [folder_num_path_list, tag_list, note_list] = chunk_list(args_front, 3)
+    [img_name_path_list, tag_list, note_list] = chunk_list(args_front, 3)
     [image_path_list, image_tag_list] = chunk_list(args_behind, 2)
-    print("folder_num_path_list, tag_list, note_list: ", folder_num_path_list, tag_list, note_list)
+    print("img_name_path_list, tag_list, note_list: ", img_name_path_list, tag_list, note_list)
     print("image_path_list, image_tag_list: ", image_path_list, image_tag_list)
     image_path_list_temp, image_tag_list_temp = [], []
     for i, (image_path, image_tag) in enumerate(zip(image_path_list, image_tag_list)):
@@ -67,18 +67,18 @@ def save_tag_json(*args):
     image_path_list = copy.deepcopy(image_path_list_temp)
     image_tag_list = copy.deepcopy(image_tag_list_temp)
 
-    for img_id, (folder_num_path, tag, note) in enumerate(zip(folder_num_path_list, tag_list, note_list)):
-        folder_NPC = folder_num_path.split('/')[-2]
-        if folder_NPC not in tag_json:
-            tag_json[folder_NPC] = {}
-        if folder_num_path not in tag_json[folder_NPC]:
-            tag_json[folder_NPC][folder_num_path] = {}
-        if "tags_" not in tag_json[folder_NPC][folder_num_path]:
-            tag_json[folder_NPC][folder_num_path]["tags_"] = {}
-        tag_json[folder_NPC][folder_num_path]["tag"] = 1 if tag else 0
-        tag_json[folder_NPC][folder_num_path]["note"] = note
+    for img_id, (img_name_path, tag, note) in enumerate(zip(img_name_path_list, tag_list, note_list)):
+        style_folder = img_name_path.split('/')[-2]
+        if style_folder not in tag_json:
+            tag_json[style_folder] = {}
+        if img_name_path not in tag_json[style_folder]:
+            tag_json[style_folder][img_name_path] = {}
+        if "tags_" not in tag_json[style_folder][img_name_path]:
+            tag_json[style_folder][img_name_path]["tags_"] = {}
+        tag_json[style_folder][img_name_path]["tag"] = 1 if tag else 0
+        tag_json[style_folder][img_name_path]["note"] = note
         for (image_path, image_tag) in zip(image_path_list[img_id], image_tag_list[img_id]):
-            tag_json[folder_NPC][folder_num_path]["tags_"][image_path] = 1 if image_tag else 0
+            tag_json[style_folder][img_name_path]["tags_"][image_path] = 1 if image_tag else 0
 
     with open(config.tag_json_file_path, 'w', encoding='utf-8') as file:
         file.write(json.dumps(tag_json, indent=4, ensure_ascii=False))
@@ -122,24 +122,25 @@ def pack_tagged_images(pack_root_dir_prefix, NPCs_can_download):
 
     return status_code
 
-def create_item(folder_NPC, folder_num, card_name, prompts):
-    folder_num_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s = [], [], [], [], [], []
+def create_item(style_folder, index):
+    img_name_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s = [], [], [], [], [], []
     tag_json = load_tag_json()
     with gr.Blocks() as submit_item:
         with gr.Row():
-            folder_num_path = os.path.join(config.img_root_path, folder_NPC, folder_num)
-            folder_num_int = int(folder_num)
-            folder_num_card_name = ' '.join([folder_num, card_name])
+            img_name_path = os.path.join(config.img_root_path, style_folder)
+            print("img_name_path: ", img_name_path)
+            # img_name_int = int(img_name)
+            img_name_card_name = ' '.join([str(index)])
             with gr.Column(scale=1):
-                folder_num_card_name_ = gr.Label(folder_num_card_name, label="folder_num card_name")
-                folder_num_path_ = gr.Textbox(folder_num_path, label="folder_num_path", interactive=False, lines=2)
-                prompts_ = gr.JSON(prompts, label="prompts", visible=False)
-            images = sorted(os.listdir(folder_num_path))
+                img_name_card_name_ = gr.Label(img_name_card_name, label="img_name card_name")
+                img_name_path_ = gr.Textbox(img_name_path, label="img_name_path", interactive=False, lines=2)
+                # prompts_ = gr.JSON(prompts, label="prompts", visible=False)
+            images = sorted(os.listdir(img_name_path))
             image_num_ = gr.Label(len(images), label="image_nums", visible=False)
 
             for image in images:
                 with gr.Column(scale=1):
-                    image_path = os.path.join(config.img_root_path, folder_NPC, folder_num, image)
+                    image_path = os.path.join(config.img_root_path, style_folder, image)
                     image_path_ = gr.Textbox(image_path, label="image_path", interactive=False, lines=2, visible=False)
                     # 1. load and show img by .png format
                     # image_ = gr.Image(Image.open(image_path), label=f"{image}", type="pil", interactive=False)
@@ -160,31 +161,34 @@ def create_item(folder_NPC, folder_num, card_name, prompts):
                         img.save(webp_image_bytesio, "WEBP")
                         image_ = gr.Image(Image.open(webp_image_bytesio), label=f"{image}", type="pil", interactive=False, show_label=False, show_download_button=False)
                         image_save_value = False
-                        if folder_NPC in tag_json and folder_num_path in tag_json[folder_NPC] and image_path in tag_json[folder_NPC][folder_num_path]["tags_"]:
-                            image_save_value = True if tag_json[folder_NPC][folder_num_path]["tags_"][image_path] == 1 else False
+                        if style_folder in tag_json and img_name_path in tag_json[style_folder] and image_path in tag_json[style_folder][img_name_path]["tags_"]:
+                            image_save_value = True if tag_json[style_folder][img_name_path]["tags_"][image_path] == 1 else False
                         image_tag_ = gr.Checkbox(value=image_save_value, label="bad", interactive=True, visible=config.tag_mode)
                         image_path_s.append(image_path_)
                         image_tag_s.append(image_tag_)
 
             save_value = False
             note_value = ""
-            if folder_NPC in tag_json and folder_num_path in tag_json[folder_NPC]:
-                save_value = True if tag_json[folder_NPC][folder_num_path]["tag"] == 1 else False
-                note_value = tag_json[folder_NPC][folder_num_path]["note"]
+            if style_folder in tag_json and img_name_path in tag_json[style_folder]:
+                save_value = True if tag_json[style_folder][img_name_path]["tag"] == 1 else False
+                note_value = tag_json[style_folder][img_name_path]["note"]
             with gr.Column(scale=1):
                 tag_ = gr.Checkbox(value=save_value, label="bad", interactive=True, visible=config.tag_mode)
                 note_ = gr.Textbox(value=note_value, label="note", interactive=True, lines=5, visible=config.tag_mode)
-            folder_num_path_s.append(folder_num_path_)
+            img_name_path_s.append(img_name_path_)
             tag_s.append(tag_)
             note_s.append(note_)
             image_num_s.append(image_num_)
 
-    return folder_num_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s
+    return img_name_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s
 
 def show_image():
     with gr.Blocks() as show_image_blocks:
-        folder_num_path_list, tag_list, note_list, image_path_list, image_tag_list, image_num_list = [], [], [], [], [], []
-        folder_NPCs = sorted(os.listdir(config.img_root_path)) if config.appointed_NPC_names == [] else config.appointed_NPC_names
+        img_name_path_list, tag_list, note_list, image_path_list, image_tag_list, image_num_list = [], [], [], [], [], []
+        style_folders = sorted(os.listdir(config.img_root_path)) if config.appointed_NPC_names == [] else config.appointed_NPC_names
+        # style_folders = [style_folder.replace(' ', r'\ ') for style_folder in style_folders]
+        style_folders = [style_folder for style_folder in style_folders if style_folder.split('.')[-1] not in ['json']]
+        print("style_folders: ", style_folders) # 
         with gr.Row():
             status_ = gr.Textbox(value='', label="status", interactive=False, lines=4)
             status_.value = "Now in tag mode, you can click 'bad' and write in 'note', then click the buttons to save tag json and package good images picked out." if config.tag_mode else "Now in display mode, you can only view the image results, can not tag."
@@ -201,32 +205,35 @@ def show_image():
                     interactive=True,
                     visible=config.tag_mode)
                 pack_tagged_images_ = gr.Button("Pack tagged NPCs to .zip", visible=config.tag_mode, interactive=False)
-        for folder_NPC in tqdm(folder_NPCs, desc="Loading folder_NPC"):
-            folder_nums = os.listdir(os.path.join(config.img_root_path, folder_NPC))
-            folder_nums = sorted([folder_num.zfill(4) for folder_num in folder_nums if folder_num.split('.')[-1] not in ['json']])
-            with open(os.path.join(config.img_root_path, folder_NPC, f"{folder_NPC}.json"), 'r') as f:
-                folder_NPC_json = json.load(f)
-            folder_nums = [folder_num.lstrip('0') for folder_num in folder_nums]
-            folder_nums = ['0' if folder_num == '' else folder_num for folder_num in folder_nums]
+        for index, style_folder in enumerate(tqdm(style_folders, desc="Loading style_folder")):
+            print("style_folder: ", style_folder)
+            # img_names = os.listdir(Path(os.path.join(config.img_root_path, style_folder)))
+            # img_names = sorted([img_name.zfill(4) for img_name in img_names if img_name.split('.')[-1] not in ['json']])
+            # # with open(os.path.join(config.img_root_path, style_folder, f"{style_folder}.json"), 'r') as f:
+            # #     style_folder_json = json.load(f)
+            # img_names = [img_name.lstrip('0') for img_name in img_names]
+            # img_names = ['0' if img_name == '' else img_name for img_name in img_names]
             with gr.Group():
                 with gr.Row():
-                    folder_NPC_ = gr.Label(folder_NPC, label="folder_NPC")
+                    style_folder_ = gr.Label(style_folder, label="style_folder")
                 with gr.Accordion("", open=False):
-                    for folder_num in tqdm(folder_nums, desc="Loading folder_num"):
-                        card_type = folder_NPC_json["output_image_list"][folder_num]["json_data"]["card_type"]
-                        card_name = config.card_type_name_dict[card_type]
-                        prompts = folder_NPC_json["output_image_list"][folder_num]["prompts"]
-                        folder_num_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s = create_item(folder_NPC, folder_num, card_name, prompts)
-                        folder_num_path_list.extend(folder_num_path_s)
-                        tag_list.extend(tag_s)
-                        note_list.extend(note_s)
-                        image_path_list.extend(image_path_s)
-                        image_tag_list.extend(image_tag_s)
-                        image_num_list.extend(image_num_s)
+                    # for img_name in tqdm(img_names, desc="Loading img_name"):
+                        # card_type = style_folder_json["output_image_list"][img_name]["json_data"]["card_type"]
+                        # card_type = "1"
+                        # card_name = card_type_name_dict[card_type]
+                        # prompts = style_folder_json["output_image_list"][img_name]["prompts"]
+                        # prompts = "xxxx"
+                    img_name_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s = create_item(style_folder, index)
+                    img_name_path_list.extend(img_name_path_s)
+                    tag_list.extend(tag_s)
+                    note_list.extend(note_s)
+                    image_path_list.extend(image_path_s)
+                    image_tag_list.extend(image_tag_s)
+                    image_num_list.extend(image_num_s)
 
         save_tag_json_.click(
             fn=save_tag_json,
-            inputs=folder_num_path_list+tag_list+note_list+image_path_list+image_tag_list+image_num_list,
+            inputs=img_name_path_list+tag_list+note_list+image_path_list+image_tag_list+image_num_list,
             outputs=[status_, NPCs_can_download_]
         )
         pack_tagged_images_.click(
