@@ -1,5 +1,4 @@
 import os
-# import pandas as pd
 import gradio as gr
 from PIL import Image, UnidentifiedImageError
 from io import BytesIO
@@ -7,9 +6,7 @@ import base64
 import json
 import shutil
 from tqdm import tqdm
-# from datetime import datetime
 import copy
-
 from configs import config
 from utils import *
 
@@ -129,12 +126,10 @@ def create_item(style_folder, index):
         with gr.Row():
             img_name_path = os.path.join(config.img_root_path, style_folder)
             print("img_name_path: ", img_name_path)
-            # img_name_int = int(img_name)
             img_name_card_name = ' '.join([str(index)])
             with gr.Column(scale=1):
                 img_name_card_name_ = gr.Label(img_name_card_name, label="img_name card_name")
                 img_name_path_ = gr.Textbox(img_name_path, label="img_name_path", interactive=False, lines=2)
-                # prompts_ = gr.JSON(prompts, label="prompts", visible=False)
             images = sorted(os.listdir(img_name_path))
             image_num_ = gr.Label(len(images), label="image_nums", visible=False)
 
@@ -186,7 +181,6 @@ def show_image():
     with gr.Blocks() as show_image_blocks:
         img_name_path_list, tag_list, note_list, image_path_list, image_tag_list, image_num_list = [], [], [], [], [], []
         style_folders = sorted(os.listdir(config.img_root_path)) if config.appointed_NPC_names == [] else config.appointed_NPC_names
-        # style_folders = [style_folder.replace(' ', r'\ ') for style_folder in style_folders]
         style_folders = [style_folder for style_folder in style_folders if style_folder.split('.')[-1] not in ['json']]
         print("style_folders: ", style_folders) # 
         with gr.Row():
@@ -206,23 +200,10 @@ def show_image():
                     visible=config.tag_mode)
                 pack_tagged_images_ = gr.Button("Pack tagged NPCs to .zip", visible=config.tag_mode, interactive=False)
         for index, style_folder in enumerate(tqdm(style_folders, desc="Loading style_folder")):
-            print("style_folder: ", style_folder)
-            # img_names = os.listdir(Path(os.path.join(config.img_root_path, style_folder)))
-            # img_names = sorted([img_name.zfill(4) for img_name in img_names if img_name.split('.')[-1] not in ['json']])
-            # # with open(os.path.join(config.img_root_path, style_folder, f"{style_folder}.json"), 'r') as f:
-            # #     style_folder_json = json.load(f)
-            # img_names = [img_name.lstrip('0') for img_name in img_names]
-            # img_names = ['0' if img_name == '' else img_name for img_name in img_names]
             with gr.Group():
                 with gr.Row():
                     style_folder_ = gr.Label(style_folder, label="style_folder")
                 with gr.Accordion("", open=False):
-                    # for img_name in tqdm(img_names, desc="Loading img_name"):
-                        # card_type = style_folder_json["output_image_list"][img_name]["json_data"]["card_type"]
-                        # card_type = "1"
-                        # card_name = card_type_name_dict[card_type]
-                        # prompts = style_folder_json["output_image_list"][img_name]["prompts"]
-                        # prompts = "xxxx"
                     img_name_path_s, tag_s, note_s, image_path_s, image_tag_s, image_num_s = create_item(style_folder, index)
                     img_name_path_list.extend(img_name_path_s)
                     tag_list.extend(tag_s)

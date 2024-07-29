@@ -1,5 +1,4 @@
 import os
-# import pandas as pd
 import gradio as gr
 from PIL import Image, UnidentifiedImageError
 from io import BytesIO
@@ -7,9 +6,7 @@ import base64
 import json
 import shutil
 from tqdm import tqdm
-# from datetime import datetime
 import copy
-
 from configs import config
 from utils import *
 
