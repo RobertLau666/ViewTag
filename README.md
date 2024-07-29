@@ -20,13 +20,13 @@ The images folder struction is similar to the following:
 
 ## Usage
 1. Modify parameters in configs/config.py
-    > ```display_mode```: ```1``` or ```2```, which respectively indicates showing images containing level-1 directory or level-2 directory.
+    > **```display_mode```**: ```1``` or ```2```, which respectively indicates showing images containing level-1 directory or level-2 directory.
 
-    > ```img_root_path```: if ```display_mode``` is ```1```, this value is a level-1 directory, such as ```"test_show_images/"```; if ```display_mode``` is ```2```, this value is a level-2 directory, such as ```"test_show_images/10002/"```.
+    > **```img_root_path```**: if ```display_mode``` is ```1```, this value is a level-1 directory, such as ```"test_show_images/"```; if ```display_mode``` is ```2```, this value is a level-2 directory, such as ```"test_show_images/10002/"```.
 
-    > ```tag_mode```: in addition to show, whether tagging is required.
+    > **```tag_mode```**: in addition to show, whether tagging is required.
 
-    > ```appointed_NPC_names```: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the specified images are showed.
+    > **```appointed_NPC_names```**: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the specified images are showed.
 
 2. Run
     ```
