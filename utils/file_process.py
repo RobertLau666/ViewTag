@@ -1,8 +1,8 @@
 import os
 import json
 from datetime import datetime
-
 from configs import config
+
 
 def get_current_time():
     current_time = datetime.now()
