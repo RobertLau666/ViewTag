@@ -19,11 +19,13 @@ The images folder struction is similar to the following:
 ```
 
 ## Usage
-Modify parameters in configs/config.py
-```
-python show_tag_imgs_app.py
-```
-Then you can open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; Or open it in the following way: [HostName]:[port], for example: 192.168.190.60:12400
+1. Modify parameters in configs/config.py
+    
+2. Run
+    ```
+    python app.py
+    ```
+    Then you can open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; Or open it in the following way: [HostName]:[port], for example: 192.168.190.60:12400
 
 Tagging rules:
 - The checkbox "bad" under each group of images is selected to represent the whole group of bad images
