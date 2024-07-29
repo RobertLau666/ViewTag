@@ -1,7 +1,7 @@
 import os
 
 port = 12403
-display_mode = 1 # 1 or 2, which indicates that the picture containing the two-level directory and the picture containing the first-level directory are suitable
+display_mode = 1
 img_root_path = "output/pack_tagged_images"
 img_root_path = "/data/dev-linky/as-loki-lcy-folder/show_tag_imgs/test_show_images"
 # img_root_path = "/data/dev-linky/as-loki-tst/background_generate_service/output_Dream_Diffusion_LIGHTNING_XL_SD_LIGHTNING_XL_V2/i2i"

@@ -20,19 +20,26 @@ The images folder struction is similar to the following:
 
 ## Usage
 1. Modify parameters in configs/config.py
+    > ```display_mode```: 1 or 2, which respectively indicates showing images containing level-1 directory or level-2 directory.
+
+    > ```img_root_path```: if display_mode is 1, this value is a level-1 directory, such as "test_show_images/"; if display_mode is 2, this value is a level-2 directory, such as "test_show_images/10002/".
+
+    > ```tag_mode```: whether to tag.
     
+    > ```appointed_NPC_names```: ```[]``` by default, all images in ```img_root_path``` are showed. If this parameter is not ```[]```, the specified images are showed.
+
 2. Run
     ```
     python app.py
     ```
-    Then you can open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; Or open it in the following way: [HostName]:[port], for example: 192.168.190.60:12400
-
-Tagging rules:
-- The checkbox "bad" under each group of images is selected to represent the whole group of bad images
-- The checkbox "bad" under each image is selected to represent that a single image is a bad image, if you want select only 1 good image in 3 images, you need to tag two "bad" in each group, and leave one without "bad" as the good image to keep
-- Click the "save tag json" button to temporarily save or save, and a json file containing the tagging information of each image and a txt file containing paths of good images picked out
-- Check the NPCs you want to pack
-- Clicking the "Pack tagged NPCs to.zip" button to pack all the good images into a.zip file according to the original image structure, but this step is not necessary, getting json file is enough
+    Wait for the image to load, then open link in local: http://0.0.0.0:[port], for example: http://0.0.0.0:12400; or open it in the following way: [HostName]:[port], for example: 192.168.190.60:12400
+    
+    > **Tagging rules::**
+    > - The checkbox "bad" under each group of images is selected to represent the whole group of bad images
+    > - The checkbox "bad" under each image is selected to represent that a single image is a bad image, if you want select only 1 good image in 3 images, you need to tag two "bad" in each group, and leave one without "bad" as the good image to keep
+    > - Click the "save tag json" button to temporarily save or save, and a json file containing the tagging information of each image and a txt file containing paths of good images picked out
+    > - Check the NPCs you want to pack
+    > - Clicking the "Pack tagged NPCs to.zip" button to pack all the good images into a.zip file according to the original image structure, but this step is not necessary, getting json file is enough
 
 ## Result presentation
 ![demo.jpeg](demo_images/demo.jpeg)
