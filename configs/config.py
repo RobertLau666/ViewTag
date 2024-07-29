@@ -1,11 +1,10 @@
 import os
 
 port = 12403
-display_mode = 1
-img_root_path = "output/pack_tagged_images"
+display_mode = 2
 img_root_path = "/data/dev-linky/as-loki-lcy-folder/show_tag_imgs/test_show_images"
+img_root_path = "/data/dev-linky/as-loki-lcy-folder/show_tag_imgs/test_show_images/10002"
 # img_root_path = "/data/dev-linky/as-loki-tst/background_generate_service/output_Dream_Diffusion_LIGHTNING_XL_SD_LIGHTNING_XL_V2/i2i"
-# img_root_path = "/data/dev-linky/as-loki-tst/background_generate_service/output_Dream_Diffusion_LIGHTNING_XL_SD_LIGHTNING_XL_V2/i2i_cn_weight0.4"
 tag_mode = True
 appointed_NPC_names = []
 
@@ -26,7 +25,6 @@ if display_mode == 1:
         img_root_path = os.path.join(project_root_dir, output_images_dir)
         tag_json_file_path = f"output/json/{NPCs_folder_name}_tag.json"
         tag_txt_file_path = f"output/txt/{NPCs_folder_name}_tag.txt"
-
     elif mode in ["test"]:
         tag_json_file_path = f"output/json/{img_root_path.split('/')[-1]}_tag.json"
         tag_txt_file_path = f"output/txt/{img_root_path.split('/')[-1]}_tag.txt"
