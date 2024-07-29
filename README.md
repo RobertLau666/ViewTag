@@ -43,8 +43,10 @@ The images folder struction is similar to the following:
 
 ## Result presentation
 ```display_mode = 1```
+
 ```img_root_path = "test_show_images/"```
 ![demo.jpeg](demo_images/demo.jpeg)
 ```display_mode = 2```
+
 ```img_root_path = "test_show_images/10002/"```
 ![demo_2.jpeg](demo_images/demo_2.jpeg)
