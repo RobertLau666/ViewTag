@@ -37,7 +37,7 @@ The images folder struction is similar to the following:
     > **Tagging rules:**
     > - The checkbox ```bad``` under each group of images is selected to represent the whole group of bad images.
     > - The checkbox ```bad``` under each image is selected to represent that a single image is a bad image, if you want select only 1 good image in 3 images, you need to tag two ```bad``` in each group, and leave one without ```bad``` as the good image to keep.
-    > - Click the ```save tag json``` button to temporarily save or save, and a ```.json``` file containing the tagging information of each image and a ```.txt``` file containing paths of good images picked out.
+    > - Click the ```Save tag json``` button to temporarily save or save, and a ```.json``` file containing the tagging information of each image and a ```.txt``` file containing paths of good images picked out.
     > - Check the NPCs you want to pack.
     > - Clicking the ```Pack tagged NPCs to .zip``` button to pack all the good images into a ```.zip``` file according to the original image structure, but this step is not necessary, getting ```.json``` file is enough.
 
