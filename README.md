@@ -39,15 +39,9 @@ The images folder struction is similar to the following:
     > - The checkbox ```bad``` under each image is selected to represent that a single image is a bad image, if you want select only 1 good image in 3 images, you need to tag two ```bad``` in each group, and leave one without ```bad``` as the good image to keep.
     > - If necessary, write a note in the ```note```.
     > - Click the ```Save tag json``` button to temporarily save or save, and a ```.json``` file containing the tagging information of each image and a ```.txt``` file containing paths of good images will be generated.
-    > - Check the NPCs you want to pack (Usually it's not necessary).
-    > - Click the ```Pack tagged NPCs to .zip``` button to pack all the good images into a ```.zip``` file according to the original image structure, but this step is not necessary, getting ```.json``` file is enough.
+    > - Check the NPCs you want to pack, click the ```Pack tagged NPCs to .zip``` button to pack all the good images into a ```.zip``` file according to the original image structure, but this step is not necessary, getting ```.json``` file is enough.
 
 ## Result presentation
-```display_mode = 1```
-
-```img_root_path = "test_show_images/"```
-![demo.jpeg](demo_images/demo.jpeg)
-```display_mode = 2```
-
-```img_root_path = "test_show_images/10002/"```
-![demo_2.jpeg](demo_images/demo_2.jpeg)
+| ```display_mode = 1``` <br> ```img_root_path = "test_show_images/"``` | ```display_mode = 2``` <br> ```img_root_path = "test_show_images/10002/"``` |
+| ------- | ------- |
+| ![demo.jpeg](demo_images/demo.jpeg)  | ![demo_2.jpeg](demo_images/demo_2.jpeg) |
