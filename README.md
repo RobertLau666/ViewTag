@@ -26,13 +26,13 @@ The images folder struction is similar to the following:
 
     > **```tag_mode```**: in addition to show, whether tagging is required.
 
-    > **```appointed_NPC_names```**: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the specified images are showed.
+    > **```appointed_NPC_names```**: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the appointed images are showed.
 
 2. Run
     ```
     python app.py
     ```
-    Wait for the image to load, then open link in local: ```http://0.0.0.0:[port]```, for example: ```http://0.0.0.0:12400```; or open it in the following way: ```[HostName]:[port]```, for example: ```192.168.190.60:12400```.
+    Please wait patiently for the images to load, then open link in local: ```http://0.0.0.0:[port]```, for example: ```http://0.0.0.0:12400```; or open it in the following way: ```[HostName]:[port]```, for example: ```192.168.190.60:12400```.
     
     > **Tagging rules:**
     > - The checkbox ```bad``` under each group of images is selected to represent the whole group of bad images.
