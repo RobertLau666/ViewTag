@@ -44,4 +44,4 @@ The images folder struction is similar to the following:
 ## Result presentation
 | ```display_mode = 1``` <br> ```img_root_path = "test_show_images/"``` | ```display_mode = 2``` <br> ```img_root_path = "test_show_images/10002/"``` |
 | ------- | ------- |
-| ![demo.jpeg](demo_images/demo.jpeg)  | ![demo_2.jpeg](demo_images/demo_2.jpeg) |
+| ![demo.jpeg](images/demo_images/demo.jpeg)  | ![demo_2.jpeg](images/demo_images/demo_2.jpeg) |
