@@ -1,55 +1,55 @@
 {
     "10002": {
-        "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/0": {
+        "images/test_show_images/10002/0": {
             "tags_": {
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/0/10002_0_0.png": 1,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/0/10002_0_1.png": 1,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/0/10002_0_2.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/0/10002_0_3.png": 1
-            },
-            "tag": 1,
-            "note": "ffffff"
-        },
-        "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/1": {
-            "tags_": {
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/1/10002_1_0.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/1/10002_1_1.png": 1,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/1/10002_1_2.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/1/10002_1_3.png": 0
-            },
-            "tag": 1,
-            "note": "222222222"
-        },
-        "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2": {
-            "tags_": {
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_0.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_1.png": 1,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_2.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10002/2/10002_2_3.png": 0
+                "images/test_show_images/10002/0/10002_0_0.png": 0,
+                "images/test_show_images/10002/0/10002_0_1.png": 1,
+                "images/test_show_images/10002/0/10002_0_2.png": 0,
+                "images/test_show_images/10002/0/10002_0_3.png": 0
             },
             "tag": 0,
-            "note": "33333333"
+            "note": "aaaaa"
+        },
+        "images/test_show_images/10002/1": {
+            "tags_": {
+                "images/test_show_images/10002/1/10002_1_0.png": 1,
+                "images/test_show_images/10002/1/10002_1_1.png": 0,
+                "images/test_show_images/10002/1/10002_1_2.png": 0,
+                "images/test_show_images/10002/1/10002_1_3.png": 0
+            },
+            "tag": 0,
+            "note": "bbbbb"
+        },
+        "images/test_show_images/10002/2": {
+            "tags_": {
+                "images/test_show_images/10002/2/10002_2_0.png": 0,
+                "images/test_show_images/10002/2/10002_2_1.png": 0,
+                "images/test_show_images/10002/2/10002_2_2.png": 0,
+                "images/test_show_images/10002/2/10002_2_3.png": 1
+            },
+            "tag": 0,
+            "note": "ccccc"
         }
     },
     "10439": {
-        "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/0": {
+        "images/test_show_images/10439/0": {
             "tags_": {
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/0/10439_0_0.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/0/10439_0_1.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/0/10439_0_2.png": 1,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/0/10439_0_3.png": 0
-            },
-            "tag": 1,
-            "note": "hhhhhhhhhh"
-        },
-        "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/1": {
-            "tags_": {
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/1/10439_1_0.png": 1,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/1/10439_1_1.png": 0,
-                "/dfs/comicai/chenyu.liu/others/show_url_imgs_gradio/test_show_images/10439/1/10439_1_2.png": 0
+                "images/test_show_images/10439/0/10439_0_0.png": 0,
+                "images/test_show_images/10439/0/10439_0_1.png": 1,
+                "images/test_show_images/10439/0/10439_0_2.png": 0,
+                "images/test_show_images/10439/0/10439_0_3.png": 0
             },
             "tag": 0,
-            "note": ""
+            "note": "ddddd"
+        },
+        "images/test_show_images/10439/1": {
+            "tags_": {
+                "images/test_show_images/10439/1/10439_1_0.png": 0,
+                "images/test_show_images/10439/1/10439_1_1.png": 0,
+                "images/test_show_images/10439/1/10439_1_2.png": 0
+            },
+            "tag": 0,
+            "note": "eeeee"
         }
     }
 }

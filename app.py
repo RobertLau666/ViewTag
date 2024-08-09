@@ -1,9 +1,9 @@
 import gradio as gr
 from configs import config
-if config.display_mode == 1:
-    from apps.show_image_app import show_image
-elif config.display_mode == 2:
+if config.display_mode == 2:
     from apps.show_image_app_2 import show_image
+elif config.display_mode == 1:
+    from apps.show_image_app_1 import show_image
 from apps.show_result_app import show_result
 
 
