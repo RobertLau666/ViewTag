@@ -44,3 +44,23 @@ def load_tag_json():
 def chunk_list(input_list, chunk_num):
     chunk_size = len(input_list) // chunk_num
     return [input_list[i:i + chunk_size] for i in range(0, len(input_list), chunk_size)]
+
+def save_tag_txt():
+    tag_json = load_tag_json()
+    good_images_num, all_images_num = 0, 0
+    tag_txt_list = []
+
+    for NPC_id, NPC_tag_dict in tag_json.items():
+        for NPC_group, NPC_group_dict in NPC_tag_dict.items():
+            all_images_num += len(NPC_group_dict["tags_"])
+            if NPC_group_dict["tag"] == 0:
+                for img_path, tag in NPC_group_dict["tags_"].items():
+                    if tag == 0:
+                        tag_txt_list.append(img_path)
+                        good_images_num += 1
+
+    with open(config.tag_txt_file_path, "w") as file:
+        for item in tag_txt_list:
+            file.write(item + '\n')
+    
+    return good_images_num, all_images_num

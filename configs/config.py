@@ -3,8 +3,8 @@ import os
 
 port = 12403
 display_mode = 2
-img_root_path = "/data/dev-linky/as-loki-lcy-folder/show_tag_imgs/test_show_images"
-img_root_path = "/data/dev-linky/as-loki-lcy-folder/show_tag_imgs/test_show_images/10002"
+img_root_path = "./test_show_images"
+img_root_path = "./test_show_images/10002"
 # img_root_path = "/data/dev-linky/as-loki-tst/background_generate_service/output_Dream_Diffusion_LIGHTNING_XL_SD_LIGHTNING_XL_V2/i2i"
 tag_mode = True
 appointed_NPC_names = []
