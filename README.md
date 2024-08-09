@@ -20,11 +20,11 @@ The images folder struction is similar to the following:
 
 ## Usage
 1. Modify parameters in ```configs/config.py```
-    > **```display_mode```**: ```1``` or ```2```, which respectively indicates that how many folders between ```img_root_path``` and the images location.
+    > **```display_mode```**: ```1``` or ```2```, which indicates that how many folders between ```img_root_path``` and the images location.
 
-    > **```img_root_path```**: if ```display_mode``` is ```1```, this value indicates there is 1 folders between ```img_root_path``` (such as ```"test_show_images/10002/"```) and the images location; if ```display_mode``` is ```2```, this value indicates there are 2 folders between ```img_root_path``` (such as ```"test_show_images/"```) and the images location.
+    > **```img_root_path```**: if ```display_mode``` is ```1```, indicates there is 1 folders between ```img_root_path``` (such as ```"test_show_images/10002/"```) and the images location; if ```display_mode``` is ```2```, indicates there are 2 folders between ```img_root_path``` (such as ```"test_show_images/"```) and the images location.
 
-    > **```tag_mode```**: in addition to show, whether tagging is required.
+    > **```tag_mode```**: in addition to showing, whether tagging is required.
 
     > **```appointed_NPC_names```**: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the appointed images are showed.
 
