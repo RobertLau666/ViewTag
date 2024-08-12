@@ -1,5 +1,5 @@
-# show_tag_imgs
-This is an showing and tagging image implementation project in gradio version, for a specific directory structure of the image folder.
+# ViewTag
+This is an viewing and tagging image implementation project in gradio version, for a specific directory structure of the image folder.
 
 The images folder struction is similar to the following:
 ```
@@ -24,7 +24,7 @@ The images folder struction is similar to the following:
 
     > **```img_root_path```**: if ```display_mode``` is ```1```, indicates there is 1 folders between ```img_root_path``` (such as ```"test_images/10002/"```) and the images location; if ```display_mode``` is ```2```, indicates there are 2 folders between ```img_root_path``` (such as ```"test_images/"```) and the images location.
 
-    > **```tag_mode```**: in addition to showing, whether tagging is required.
+    > **```tag_mode```**: in addition to viewing, whether tagging is required.
 
     > **```appointed_NPC_names```**: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the appointed images are showed.
 

@@ -1,5 +1,5 @@
-images/test_show_images/10002/0/10002_0_0.png
-images/test_show_images/10002/0/10002_0_1.png
-images/test_show_images/10002/0/10002_0_3.png
-images/test_show_images/10002/2/10002_2_0.png
-images/test_show_images/10002/2/10002_2_2.png
+images/test_images/10002/0/10002_0_0.png
+images/test_images/10002/0/10002_0_1.png
+images/test_images/10002/0/10002_0_3.png
+images/test_images/10002/2/10002_2_0.png
+images/test_images/10002/2/10002_2_2.png
