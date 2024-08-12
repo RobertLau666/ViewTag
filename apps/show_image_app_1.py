@@ -162,10 +162,10 @@ def show_image():
         img_name_path_list, tag_list, note_list, image_path_list, image_tag_list, image_num_list = [], [], [], [], [], []
         style_folders = sorted(os.listdir(config.img_root_path)) if config.appointed_NPC_names == [] else config.appointed_NPC_names
         style_folders = [style_folder for style_folder in style_folders if style_folder.split('.')[-1] not in ['json']]
-        print("style_folders: ", style_folders) # 
+        print("style_folders: ", style_folders)
         with gr.Row():
             status_ = gr.Textbox(value='', label="status", interactive=False, lines=4)
-            status_.value = "Now in tag mode, you can click 'bad' and write in 'note', then click the buttons to save tag json and package good images picked out." if config.tag_mode else "Now in display mode, you can only view the image results, can not tag."
+            status_.value = "Now in tag mode, you can click 'bad' and write in 'note', then click the buttons to save tag json and package good images picked out." if config.tag_mode else "Now in view mode, you can only view the image results, can not tag."
         with gr.Row():
             with gr.Column():
                 save_tag_json_ = gr.Button("Save tag json", visible=config.tag_mode)

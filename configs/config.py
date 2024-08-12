@@ -1,19 +1,19 @@
 import os
 
 
-port = 12403
-# display_mode = 1
+port = 12402
+# view_mode = 1
 # img_root_path = "images/test_images/10002"
-display_mode = 2
+view_mode = 2
 img_root_path = "images/test_images"
 tag_mode = True
 appointed_NPC_names = []
 
 
-if display_mode == 1:
+if view_mode == 1:
     tag_json_file_path = f"output/json/{img_root_path.split('/output_')[-1].replace('/','_')}_tag.json"
     tag_txt_file_path = f"output/txt/{img_root_path.split('/output_')[-1].replace('/','_')}_tag.txt"
-elif display_mode == 2:
+elif view_mode == 2:
     card_type_name_dict = {
         "1": "梦境卡",
         "2": "事件卡",

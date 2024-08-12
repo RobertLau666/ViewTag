@@ -1,16 +1,16 @@
 import gradio as gr
 from configs import config
-if config.display_mode == 2:
+if config.view_mode == 2:
     from apps.show_image_app_2 import show_image
-elif config.display_mode == 1:
+elif config.view_mode == 1:
     from apps.show_image_app_1 import show_image
 from apps.show_result_app import show_result
 
 
 with gr.Blocks() as demo:
     gr.Markdown("""
-                <div style="display: inline">
-                <strong><em>Image display and tag platform</em></strong>
+                <div style="view: inline">
+                <strong><em>ViewTag: Image viewing and tagging platform</em></strong>
                 </div>
                 """)
 

@@ -1,5 +1,5 @@
 # ViewTag
-This is an viewing and tagging image implementation project in gradio version, for a specific directory structure of the image folder.
+ViewTag is an image viewing and tagging platform in gradio version, for a specific directory structure of the image folder.
 
 The images folder struction is similar to the following:
 ```
