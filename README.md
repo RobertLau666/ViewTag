@@ -3,7 +3,7 @@ This is an showing and tagging image implementation project in gradio version, f
 
 The images folder struction is similar to the following:
 ```
-| test_show_images/
+| test_images/
 |---- 10002/
 |-------- 0/
 |------------ 10002_0_0.png
@@ -22,7 +22,7 @@ The images folder struction is similar to the following:
 1. Modify parameters in ```configs/config.py```
     > **```display_mode```**: ```1``` or ```2```, which indicates that how many folders between ```img_root_path``` and the images location.
 
-    > **```img_root_path```**: if ```display_mode``` is ```1```, indicates there is 1 folders between ```img_root_path``` (such as ```"test_show_images/10002/"```) and the images location; if ```display_mode``` is ```2```, indicates there are 2 folders between ```img_root_path``` (such as ```"test_show_images/"```) and the images location.
+    > **```img_root_path```**: if ```display_mode``` is ```1```, indicates there is 1 folders between ```img_root_path``` (such as ```"test_images/10002/"```) and the images location; if ```display_mode``` is ```2```, indicates there are 2 folders between ```img_root_path``` (such as ```"test_images/"```) and the images location.
 
     > **```tag_mode```**: in addition to showing, whether tagging is required.
 
@@ -42,6 +42,6 @@ The images folder struction is similar to the following:
     > - Check the NPCs you want to pack, click the ```Pack tagged NPCs to .zip``` button to pack all the good images into a ```.zip``` file according to the original image structure, but this step is not necessary, getting ```.json``` file is enough.
 
 ## Result presentation
-| ```display_mode = 1``` <br> ```img_root_path = "test_show_images/10002/"``` | ```display_mode = 2``` <br> ```img_root_path = "test_show_images/"``` |
+| ```display_mode = 1``` <br> ```img_root_path = "test_images/10002/"``` | ```display_mode = 2``` <br> ```img_root_path = "test_images/"``` |
 | ------- | ------- |
 | ![demo_1.jpeg](images/demo_images/demo_1.jpeg)  | ![demo_2.jpeg](images/demo_images/demo_2.jpeg) |

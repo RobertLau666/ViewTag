@@ -3,9 +3,9 @@ import os
 
 port = 12403
 # display_mode = 1
-# img_root_path = "images/test_show_images/10002"
+# img_root_path = "images/test_images/10002"
 display_mode = 2
-img_root_path = "images/test_show_images"
+img_root_path = "images/test_images"
 tag_mode = True
 appointed_NPC_names = []
 
