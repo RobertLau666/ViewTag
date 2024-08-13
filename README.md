@@ -17,6 +17,13 @@ ViewTag is an image viewing and tagging platform in [gradio](https://github.com/
 |---- ...
 ```
 
+## Install
+```
+git clone https://github.com/RobertLau666/ViewTag.git
+cd ViewTag
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
 ## Usage
 1. Modify parameters in ```configs/config.py```
     > **```view_mode```**: ```1``` or ```2```, which indicates that how many folders between ```img_root_path``` and the images location.
