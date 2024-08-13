@@ -4,6 +4,11 @@ from datetime import datetime
 from configs import config
 
 
+status_code_dict = {
+    "view": "Now in viewing mode, you can only view the image results, can not tag.",
+    "tag": "Now in tagging mode, you can click 'bad' and write in 'note', then click the buttons to save tag json and package good images picked out."
+}
+
 def get_current_time():
     current_time = datetime.now()
     date_suffix = current_time.strftime("_%Y%m%d")

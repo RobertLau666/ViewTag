@@ -1,7 +1,6 @@
 # ViewTag
-ViewTag is an image viewing and tagging platform in gradio version, for a specific directory structure of the image folder.
+ViewTag is an image viewing and tagging platform in [gradio](https://github.com/gradio-app/gradio) version, for a image folder similar to the following structure:
 
-The images folder struction is similar to the following:
 ```
 | test_images/
 |---- 10002/
@@ -26,7 +25,7 @@ The images folder struction is similar to the following:
 
     > **```tag_mode```**: in addition to viewing, whether tagging is required.
 
-    > **```appointed_NPC_names```**: ```[]``` by default, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the appointed images are showed.
+    > **```appointed_NPC_names```**: The default is ```[]```, all images in ```img_root_path``` are showed, if this parameter is not ```[]```, the appointed images are showed.
 
 2. Run
     ```
