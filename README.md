@@ -52,14 +52,14 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 | ------- | ------- |
 | ![demo_1.jpeg](images/demo_images/demo_1.jpeg)  | ![demo_2.jpeg](images/demo_images/demo_2.jpeg) |
 
-## ☕ 支持项目，无需额外花费
+## ☕ Support This Project at No Extra Cost
 
-如果你觉得这个项目对你有帮助，可以通过下面这个链接注册 **OrcaRouter**。
+If you find this project helpful, you can support it by signing up for **OrcaRouter** through the link below.
 
-它是一个大模型 API 网关，可以让你用一套 API 便捷访问 OpenAI、Claude、DeepSeek 等多个服务商的模型。
+👉 Click here to get started with OrcaRouter
 
-通过我的链接注册，**你可以享受永久 0 加价的 API 调用费率**，同时也会以 **5% 的实际消费金额** 支持本项目的持续维护与更新。
+OrcaRouter is a large-model API gateway that lets you access models from OpenAI, Claude, DeepSeek, and many other providers through a single API.
 
-👉 [点击这里开始使用 OrcaRouter](https://www.orcarouter.ai/ref/ref_6553a0519dd8d8578a4d)
+By signing up through my referral link, **you get permanent 0% markup on API calls**, and **5% of your actual usage fees** will go toward supporting the continued maintenance and development of this project.
 
-感谢你的支持！这对独立开发者来说是很大的鼓励。
+Thank you for your support! It means a lot to independent developers like me.
