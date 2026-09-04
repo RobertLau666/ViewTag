@@ -56,7 +56,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 If you find this project helpful, you can support it by signing up for **OrcaRouter** through the link below.
 
-👉 Click here to get started with OrcaRouter
+👉 [Click here to get started with OrcaRouter](https://www.orcarouter.ai/ref/ref_6553a0519dd8d8578a4d)
 
 OrcaRouter is a large-model API gateway that lets you access models from OpenAI, Claude, DeepSeek, and many other providers through a single API.
 
